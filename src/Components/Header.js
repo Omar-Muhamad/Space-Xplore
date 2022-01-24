@@ -1,18 +1,20 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import img from '../images/planet.png';
 
 const Header = () => (
   <div className="container">
     <header className="header">
-      <Link to="/" className="logo">
+      <NavLink to="/" className="logo">
         Logo
-      </Link>
+        <img src={img} alt="logo" />
+      </NavLink>
       <nav className="nav">
         <ul className="navLinks">
           <li className="navLink">
-            <Link to="/">Home</Link>
+            <NavLink to="/">Rockets</NavLink>
           </li>
           <li className="navLink">
-            <Link to="/About">About</Link>
+            <NavLink to="/missions">Missions</NavLink>
           </li>
         </ul>
       </nav>
