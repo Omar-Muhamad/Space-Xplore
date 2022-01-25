@@ -12,6 +12,8 @@ const MissionItem = ({ mission }) => {
 
   const joinButtonStyle = 'hover:bg-gray-400 text-gray-500 border-gray-500';
   const leaveButtonStyle = 'hover:bg-red-400 text-red-500 border-red-500';
+  const notAMemberTextStyle = 'bg-gray-500';
+  const activeMemberTextStyle = 'bg-sky-500';
 
   return (
     <tr>
@@ -19,8 +21,13 @@ const MissionItem = ({ mission }) => {
       <td className="border border-slate-300 px-2">{mission.description}</td>
       <td className="border border-slate-300 xl:1/12 lg:w-2/12 md:w-2/12 w-3/12 px-1">
         <div className="flex justify-center text-center">
-          <span className="py-1 rounded lg:w-7/12 w-100 bg-gray-500 text-white text-sm">
-            Not A Member
+          <span
+            className={`${
+              mission.reserved ? activeMemberTextStyle : notAMemberTextStyle
+            } py-1 rounded lg:w-7/12 w-100 text-sm text-white`}
+          >
+            {!mission.reserved && 'Not A Member'}
+            {mission.reserved && 'Active Member'}
           </span>
         </div>
       </td>
