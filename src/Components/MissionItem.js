@@ -1,14 +1,18 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { joinMission } from '../Redux/missions/missions';
+import { toggleMission } from '../Redux/missions/missions';
 
 const MissionItem = ({ mission }) => {
   const dispatch = useDispatch();
 
-  const joinMissionHandler = () => {
-    dispatch(joinMission(mission.mission_id));
+  const toggleMissionHandler = () => {
+    dispatch(toggleMission(mission.mission_id));
   };
+
+  const joinButtonStyle = 'hover:bg-gray-400 text-gray-500 border-gray-500';
+  const leaveButtonStyle = 'hover:bg-red-400 text-red-500 border-red-500';
+
   return (
     <tr>
       <td className="border border-slate-300">{mission.mission_name}</td>
@@ -23,10 +27,12 @@ const MissionItem = ({ mission }) => {
       <td className="border border-slate-300 xl:1/12 lg:w-2/12 md:w-2/12 w-3/12 text-center">
         <button
           type="button"
-          className="hover:bg-gray-400 hover:text-white text-gray-500 border border-gray-500 text-sm py-1 px-3 rounded"
-          onClick={joinMissionHandler}
+          className={`${
+            mission.reserved ? leaveButtonStyle : joinButtonStyle
+          } hover:text-white border text-sm py-1 px-3 rounded`}
+          onClick={toggleMissionHandler}
         >
-          Join Mission
+          {mission.reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
     </tr>
@@ -37,6 +43,7 @@ MissionItem.propTypes = {
     mission_id: PropTypes.string.isRequired,
     mission_name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
   }).isRequired,
 };
 
