@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 // import { increament, decreament } from '../Redux/counter/counter';
-import { getRockets } from '../Redux/rockets/rockets';
+import { getRockets } from '../Redux/APIHelper';
 
 const Home = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
