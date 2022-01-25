@@ -6,7 +6,7 @@ const Header = () => (
     <header className="header py-4 flex items-center justify-center sm:justify-between px-12">
       <NavLink
         to="/"
-        className={(isActive) => `hidden sm:flex items-center gap-3 ${!isActive ? ' unselected' : ''}`}
+        className={(isActive) => `${!isActive ? ' unselected' : ''} hidden sm:flex items-center gap-3`}
       >
         <img className="w-24" src={img} alt="logo" />
         <h1 className="text-2xl font-bold">Space Xplore</h1>
@@ -16,7 +16,7 @@ const Header = () => (
           <li className="navLink">
             <NavLink to="/">Rockets</NavLink>
           </li>
-          <li className="navLink">
+          <li className="navLink border-r-2 border-gray-600 pr-3">
             <NavLink to="/missions">Missions</NavLink>
           </li>
           <li className="navLink">
