@@ -1,7 +1,7 @@
 import getAllMissionsAPI from '../APIHelper';
 
 const GET_ALL_MISSIONS = 'spaceXplore/missions/GET_ALL_MISSIONS';
-const JOIN_MISSION = 'spaceXplore/missions/JOIN_MISSION';
+const TOGGLE_MISSION = 'spaceXplore/missions/TOGGLE_MISSION';
 
 const initialState = [];
 
@@ -21,8 +21,8 @@ export const getAllMissions = () => async (dispatch) => {
   });
 };
 
-export const joinMission = (id) => ({
-  type: JOIN_MISSION,
+export const toggleMission = (id) => ({
+  type: TOGGLE_MISSION,
   payload: id,
 });
 
@@ -31,10 +31,10 @@ const reducer = (state = initialState, action) => {
     case GET_ALL_MISSIONS:
       return action.payload;
 
-    case JOIN_MISSION:
+    case TOGGLE_MISSION:
       return state.map((state) => {
         if (state.mission_id !== action.payload) return state;
-        return { ...state, reserved: true };
+        return { ...state, reserved: !state.reserved };
       });
 
     default:
