@@ -1,17 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# OMA Bookstore
+# Space Xplore
 ## Description
-The Bookstore is a website similar to the "Awesome Books" website built in the previous module. You will create an MVP version of it that allows you to:
+Space Xplore is a React-Redux application consists of Rockets, Missions, and the My Profile section. it that allows you to:
 
-- Display a list of books.
-- Add a book.
-- Remove a selected book.
+- See different Rockets and reserve any one.
+- See different Missions and Join any one.
+- Display your reserved rockets and joined missions in profile section.
 
-I build this application using React and Redux togethar.
+
+## Live Demo
+
+This is the live demo [link](https://space-xplore.netlify.app/) to our site.
 
 ## Site Screenshots
 
 ![screenshot](./Screenshot-1.png)
+![screenshot](./Screenshot-2.png)
 
 
 ## Built With
@@ -46,6 +50,13 @@ I build this application using React and Redux togethar.
 - GitHub: [@Omar-Muhamad](https://github.com/Omar-Muhamad)
 - Twitter: [@Eng_OmarMuhamad](https://twitter.com/Eng_OmarMuhamad)
 - LinkedIn: [@eng-omarmuhammad](https://www.linkedin.com/in/eng-omarmuhammad/)
+
+👤 **George Magdy**
+
+- GitHub: [@George_Magdy](https://github.com/gemmen29)
+- Twitter: [@George_Magdy](https://twitter.com/georgtriple1)
+- LinkedIn: [@George_Magdy](https://www.linkedin.com/in/george-magdy-840/)
+
 
 ## Show your support
 
