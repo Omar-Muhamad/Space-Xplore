@@ -12,6 +12,10 @@ Space Xplore is a React-Redux application consists of Rockets, Missions, and the
 
 This is the live demo [link](https://space-xplore.netlify.app/) to our site.
 
+## Video Demo
+
+Video Demo [Link](https://drive.google.com/file/d/1MFIgsDCAyO6s45lenErA36nYgRwH3bFy/view?usp=sharing)
+
 ## Site Screenshots
 
 ![screenshot](./Screenshot-1.png)
