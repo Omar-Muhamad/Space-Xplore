@@ -14,5 +14,6 @@ body {
 }
 
 .active {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #000;
 }

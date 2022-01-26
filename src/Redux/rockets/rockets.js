@@ -16,6 +16,13 @@ export const getRocketsFailure = (error) => ({
   error,
 });
 
+const TOGGLE_RESERVE = 'TOOGLE_RESERVE';
+
+export const toggleReserve = (id) => ({
+  type: TOGGLE_RESERVE,
+  id,
+});
+
 const initialState = {
   loading: false,
   rockets: [],
@@ -23,6 +30,7 @@ const initialState = {
 };
 
 const rocketsReducer = (state = initialState, action) => {
+  let rockets;
   switch (action.type) {
     case GET_ROCKETS_REQUEST:
       return {
@@ -42,6 +50,21 @@ const rocketsReducer = (state = initialState, action) => {
         loading: false,
         rockets: [],
         error: action.payload,
+      };
+    case TOGGLE_RESERVE:
+      rockets = [...state.rockets];
+      rockets = rockets.map((rocket) => {
+        if (!rocket.reserved && rocket.id.toString() === action.id) {
+          return { ...rocket, reserved: true };
+        }
+        if (rocket.reserved && rocket.id.toString() === action.id) {
+          return { ...rocket, reserved: !rocket.reserved };
+        }
+        return rocket;
+      });
+      return {
+        ...state,
+        rockets,
       };
     default:
       return state;
