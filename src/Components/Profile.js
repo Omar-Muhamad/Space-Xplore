@@ -8,18 +8,25 @@ const Profile = () => {
     <div className="grid grid-cols-2">
       <div className="px-5">
         <h2 className="font-bold text-2xl px-1 py-2">My Missions</h2>
-        <table className="border-collapse border-2 border-slate-300 w-full">
-          <tbody>
-            {filteredMissions.map((mission) => (
-              <tr
-                className="border-2 border-slate-300"
-                key={mission.mission_id}
-              >
-                <td className="p-3">{mission.mission_name}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {filteredMissions.length === 0 && (
+          <p className="text-base text-gray-500 px-1">
+            No joined mission found.
+          </p>
+        )}
+        {filteredMissions.length > 0 && (
+          <table className="border-collapse border-2 border-slate-300 w-full">
+            <tbody>
+              {filteredMissions.map((mission) => (
+                <tr
+                  className="border-2 border-slate-300"
+                  key={mission.mission_id}
+                >
+                  <td className="p-3">{mission.mission_name}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
       <div>Hello</div>
     </div>
