@@ -1,12 +1,9 @@
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRockets } from '../Redux/APIHelper';
 import { toggleReserve } from '../Redux/rockets/rockets';
 
 const Home = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
   const dispatch = useDispatch();
-  useEffect(() => dispatch(getRockets()), []);
 
   const handleClick = (e) => {
     dispatch(toggleReserve(e.target.dataset.id));
