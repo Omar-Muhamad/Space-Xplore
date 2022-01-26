@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getAllMissions } from '../Redux/missions/missions';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import styles from './Missions.module.css';
 import MissionItem from './MissionItem';
 
 const Missions = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getAllMissions());
-  }, [dispatch]);
   const missions = useSelector((state) => state.missions);
   return (
     <table

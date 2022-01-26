@@ -1,4 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getAllMissions } from './Redux/missions/missions';
 import Header from './Components/Header';
 import Rockets from './Components/Rockets';
 import Missions from './Components/Missions';
@@ -6,6 +9,12 @@ import Profile from './Components/Profile';
 import './App.css';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllMissions());
+  }, [dispatch]);
+
   return (
     <div className="App">
       <Header />
