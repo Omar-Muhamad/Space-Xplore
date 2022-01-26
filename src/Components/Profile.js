@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 const Profile = () => {
   const missions = useSelector((state) => state.missions);
   const filteredMissions = missions.filter((mission) => mission.reserved);
-  console.log(filteredMissions);
   return (
     <div className="grid grid-cols-2">
       <div className="px-5">
