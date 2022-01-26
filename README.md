@@ -25,10 +25,11 @@ Video Demo [Link](https://drive.google.com/file/d/1MFIgsDCAyO6s45lenErA36nYgRwH3
 ## Built With
 
 - React.
+- Redux
 - HTML.
 - CSS.
-- Webpack.
 - JavaScript.
+- Tailwind.
 - Linters.
 
 ## Install
