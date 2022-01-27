@@ -18,7 +18,7 @@ const Home = () => {
       <ul className="rockets mt-8 grid gap-12">
         {rockets.map((rocket) => (
           <li
-            className="rocket p-8 rounded-lg shadow-card transition hover:shadow-card hover:scale-[1.03] border-slate-300 flex gap-10"
+            className="rocket p-8 rounded-lg shadow-card duration-300 hover:shadow-card hover:scale-[1.03] border-slate-300 flex gap-10"
             key={rocket.id}
           >
             <div className="rocketImg basis-1/3">
