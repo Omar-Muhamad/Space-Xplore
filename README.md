@@ -24,6 +24,10 @@ Video Demo
 
 ![screenshot](./website.gif)
 
+# Full Website
+
+![screenshot](./screen1.jpg) ![screenshot](./screen2.jpg)
+
 ## Built With
 
 - React.
