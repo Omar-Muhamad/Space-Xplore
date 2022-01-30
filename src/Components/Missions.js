@@ -7,7 +7,7 @@ const Missions = () => {
   const missions = useSelector((state) => state.missions);
   return (
     <table
-      className={`${styles.table} border border-slate-300 md:mx-12 mx-0 my-2 mt-12`}
+      className={`${styles.table} border border-slate-300 sm:mx-12 mx-0 my-2 mt-12`}
     >
       <thead>
         <tr>
