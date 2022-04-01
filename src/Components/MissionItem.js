@@ -17,9 +17,9 @@ const MissionItem = ({ mission }) => {
 
   return (
     <tr>
-      <td className="border border-slate-300">{mission.mission_name}</td>
-      <td className="border border-slate-300 px-2">{mission.description}</td>
-      <td className="border border-slate-300 xl:1/12 lg:w-2/12 md:w-2/12 w-3/12 px-1">
+      <td className="border border-slate-300 w-10">{mission.mission_name}</td>
+      <td className="border border-slate-300 sm:px-2">{mission.description}</td>
+      <td className="border border-slate-300 xl:1/12 lg:w-2/12 md:w-2/12 px-1">
         <div className="flex justify-center text-center">
           <span
             className={`${
@@ -31,7 +31,7 @@ const MissionItem = ({ mission }) => {
           </span>
         </div>
       </td>
-      <td className="border border-slate-300 xl:1/12 lg:w-2/12 md:w-2/12 w-3/12 text-center">
+      <td className="border border-slate-300 xl:1/12 lg:w-2/12 md:w-2/12 text-center">
         <button
           type="button"
           className={`${

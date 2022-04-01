@@ -3,7 +3,7 @@ import img from '../images/planet.png';
 
 const Header = () => (
   <div>
-    <header className="header py-4 px-24 shadow-xl flex items-center justify-between">
+    <header className="header py-4 shadow-xl flex items-center lg:justify-around sm:justify-between justify-center">
       <NavLink
         to="/"
         className={(isActive) => `${!isActive ? ' unselected' : ''} hidden sm:flex items-center gap-3`}
@@ -12,7 +12,7 @@ const Header = () => (
         <h1 className="text-2xl font-bold">Space Xplore</h1>
       </NavLink>
       <nav className="nav">
-        <ul className="navLinks flex gap-12 text-[gray] text-xl font-medium">
+        <ul className="navLinks flex gap-4 text-[gray] text-xl font-medium">
           <li className="navLink hover:text-black">
             <NavLink to="/">Rockets</NavLink>
           </li>
