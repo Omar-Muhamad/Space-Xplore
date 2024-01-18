@@ -1,16 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Space Xplore
 ## Description
-Space Xplore is a React-Redux application consists of Rockets, Missions, and the My Profile section. it that allows you to:
+Space Xplore is a React-Redux application consisting of Rockets, Missions, and the My Profile section. it that allows you to:
 
-- See different Rockets and reserve any one.
-- See different Missions and Join any one.
-- Display your reserved rockets and joined missions in profile section.
+- See different Rockets and reserve anyone.
+- See different Missions and Join anyone.
+- Display your reserved rockets and joined missions in the profile section.
 
 
-## Live Demo
+## 🚀 Live Demo
 
-This is the live demo [link](https://space-xplore.netlify.app/) to our site.
+The live demo [link](https://space-xplore.netlify.app/) deployed on Netlify.
 
 ## Video Demo
 
@@ -22,31 +22,45 @@ Video Demo [Link](https://drive.google.com/file/d/1MFIgsDCAyO6s45lenErA36nYgRwH3
 ![screenshot](./Screenshot-2.png)
 
 
-## Built With
+## 🛠 Built With
+
+### Tech Stack
 
 - React.
-- Redux
-- HTML.
-- CSS.
 - JavaScript.
+- Redux
 - Tailwind.
 - Linters.
 
-## Install
+### Key Features
 
-- Install node.js from [HERE](https://nodejs.org/en/).
+- Gitflow workflow is used.
+- GitHub Projects (Kanban board Agile) is used to arrange workload between team members.
+- App created using CRA (create-react-app).
+- REST API consumed to fetch rockets, and missions.
+- Redux is used as a state management tool.
+- Tailwind is used for styling.
 
-## Test
+## 💻 Getting Started
+
+### Prerequisites
+
+- Install [node.js](https://nodejs.org/en/).
+  
+### Setup
+
+- Clone the project using git-bash or Githup Desktop.
+- Open the project folder with VSCode or any Editor.
+- Open the terminal and navigate to the project folder.
+
+### Usage
+
+- Run this command `npm install` to install dependencies.
+- Run this command `npm start` to start the dev server.
+
+### Test
 
 - `Npm run test`
-  
-## Setup
-
-1. Clone the project using git-bash or Githup Desktop.
-2. Open the project folder with VSCode or any Editor.
-3. Open terminal and navigate to the project folder.
-4. Type `npm install`.
-5. Type `npm start`.
 
 ## Authors
 
@@ -62,10 +76,16 @@ Video Demo [Link](https://drive.google.com/file/d/1MFIgsDCAyO6s45lenErA36nYgRwH3
 - Twitter: [@George_Magdy](https://twitter.com/georgtriple1)
 - LinkedIn: [@George_Magdy](https://www.linkedin.com/in/george-magdy-840/)
 
+## 🤝 Contributing
 
-## Show your support
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page.
+
+## ⭐️ Show your support
 
 Give a ⭐️ if you like this project!
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
