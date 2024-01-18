@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Space Xplore
 ## Description
-Space Xplore is a React-Redux application that features 3 pages Rockets, Missions, and the My Profile. it that allows you to:
-
+Space Xplore is a React-Redux application that features 3 pages Rockets, Missions, and the My Profile.
+It that allows you to:
 - See different Rockets and reserve anyone.
 - See different Missions and Join anyone.
 - Display your reserved rockets and joined missions in the profile section.
